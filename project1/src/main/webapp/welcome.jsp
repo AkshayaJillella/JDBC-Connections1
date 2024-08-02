@@ -22,7 +22,7 @@
  <tr>
 <%
   Class.forName("com.mysql.cj.jdbc.Driver");
-  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/devi", "root", "akshaya@123");
+  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/devi", "root", "root");
   String sql = "select * from employee";
   PreparedStatement pmst = conn.prepareStatement(sql);
   ResultSet rs = pmst.executeQuery();
