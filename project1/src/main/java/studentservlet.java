@@ -17,7 +17,7 @@ public class studentservlet extends HttpServlet{
 		try {
 			Scanner sc = new Scanner(System.in);
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/devi","root", "akshaya@123");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/devi","root", "root");
 			String sql = "insert into employee (id,name) value(?,?)";
 			int id = Integer.parseInt(req.getParameter("ID"));
 			String name = req.getParameter("NAME");
